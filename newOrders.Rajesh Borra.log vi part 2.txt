@@ -1,0 +1,15 @@
+vi Editor Part-2
+
+Run the fixGenerator.sh script - cd ~  -->  ./fixGenerator.sh &
+1. logfile.out  > newOrders.log
+2. vi newOrders.log
+3. Press gg to go to the first line.   
+   Press yy to copy the line.   
+   Press p to paste the line.
+4. duplicate the 5th line -    
+   Press yy to copy the line.   
+   Press p to paste the line.
+5. sed 's/MTHREE/M3/g' newOrders.log
+6. sed 's/; */,/g' newOrders.log
+7. :wq
+8. newOrders.Rajesh Borra.log
