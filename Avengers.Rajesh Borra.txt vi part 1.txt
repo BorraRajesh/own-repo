@@ -1,0 +1,56 @@
+1. vi avengers
+   press insert
+   copy and paste the text
+
+2. press Esc
+   type :wq! 
+   press Enter
+
+3. wc avengers
+
+4. vi avengers
+   press G to go to eof
+   press o to add new line 
+   enter insert mode
+   type word count 98
+
+5. press Esc
+   type :%s/\<the\>/THE/g
+   press Enter
+
+6. Press gg to go to the first line.
+   Press yy to copy the line.
+   Press G to go to the eof.
+   Press p to paste the line.
+
+7. press gg to go to first line
+   press dd to delete
+
+8. press u
+
+9. press gg go to first line 
+   press O
+   enter Captain America - Endgame
+
+10. press Esc
+    type :wq!
+    press Enter
+
+11. wc -l avengers
+
+12. vi avengers
+    press Esc
+    press G
+    press k
+    press O
+    type line count 7
+
+13. press Esc
+    type :%s/Good luck//g
+    press Enter
+
+14. press esc
+    type :wq!
+    press Enter
+
+15. Avengers.Rajesh Borra.txt
