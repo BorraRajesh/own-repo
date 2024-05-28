@@ -1,0 +1,45 @@
+Variable exercise
+
+1. STOCK=AAPL
+2. echo “$STOCK”
+3. STOCK="${STOCK}_US”
+4. PRICE=290.84
+5. echo "The current price of $STOCK is $PRICE”
+6. WHOAMI=$(whoami)
+7. SERVERTYPE=$(uname)
+8. echo “$SERVERTYPE”
+9. CMD=”uname -i”
+10. echo $CMD
+11. echo `$CMD`
+12. cd ~
+13. mkdir scripts
+14. echo $PATH
+15. export PATH=$PATH:~/scripts/
+16. echo $PATH
+17. mkdir Algo1
+    cd Algo1
+    touch filea fileb
+    cd ..
+    rm -r Algo1  
+18. mkdir Payment1
+19. cd Payment1
+    mkdir logs configuration scripts
+20. touch scripts/start.sh
+21. touch configuration/instance.properties
+22. cd configuration
+    sudo chmod 334 instance.properties
+23. cd scripts
+    sudo chmod 661 start.sh
+24. man cat > cat.output
+25. sudo chmod 474 cat.output
+26. cd ~
+27. pwd
+28. rm -rf Payment1
+29. touch nullfile
+    rm -i nullfile
+30. mkdir temp
+31. MYTEMP=~/temp
+32. echo $MYTEMP
+33. unset MYTEMP
+34. rmdir temp
+
