@@ -1,0 +1,15 @@
+1. mkdir ~/logs
+2. mv fixlog* logs/
+3. cat fixlog*.log | sed 's/MTHREE/M3/g' > fixlog2.log
+4. grep 35=8 fixlog2.log | grep -v 32=0 > fills.log
+5. grep 39=4 fixlog2.log > cancels.log
+6. grep 39=1 fills.log > partiallFills.log
+7. awk '{print $7, $9, $13, $10, $15, $16}' partiallFills.log > parsedPartialFills.log
+8. sed -i 's/[[1-9][1-9]=]*//g' parsedPartialFills.log
+9. sed -i '1i Symbol, OrderID, Side, Price, Qty, ExecID' 
+parsedPartialFills.log
+awk '{print}' parsed*
+10. cat parsed* > Rajesh.module10.csv
+11. cp cancels.log cancels2.log
+12. sed -i 's/55=/55=A/g' cancels2.log
+13. diff cancels.log cancels2.log
